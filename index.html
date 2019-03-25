@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="sketch.js"></script>
+  <!-- <object type="image/svg+xml" data="http://mysvg.jsp?ielikes=.svg" width="580" height="300" ></object> -->
+</head>
+
+<body>
+  <h3>Principles of New Media</h3>
+  <p>
+    The identity of media has changed even more dramatically. Below I summarize some of the key differences between old and new media. In compiling this list of differences I tried to arrange them in a logical order. That is, the principles 3-5 are
+    dependent on the principles 1-2. This is not dissimilar to axiomatic logic where certain axioms are taken as staring points and further theorems are proved on their basis.
+  </p>
+  <p>Not every new media object obeys these principles. They should be considered not as some absolute laws but rather as general tendencies of a culture undergoing computerization. As the computerization affects deeper and deeper layers of culture,
+    these tendencies will manifest themselves more and more.</p>
+
+  <h6>Numerical Representation</h6>
+  <p>All new media objects, whether they are created from scratch on computers or converted from analog media sources, are composed of digital code; they are numerical representations. This has two key consequences:</p>
+  <p>1.1. New media object can be described formally (mathematically). For instance, an image or a shape can be described using a mathematical function.
+  </p>
+  <p>1.2. New media object is a subject to algorithmic manipulation. For instance, by applying appropriate algorithms, we can automatically remove "noise" from a photograph, improve its contrast, locate the edges of the shapes, or change its
+    proportions. In short, media becomes programmable.</p>
+
+  <p>When new media objects are created on computers, they originate in numerical form. But many new media objects are converted from various forms of old media. Although most readers understand the difference between analog and digital media, few
+    notes should be added on the terminology and the conversion process itself. This process assumes that data is originally continuos, i.e. “the axis or dimension that is measured has no apparent indivisible unit from which it is
+    composed.”16 Converting continuos data into a numerical representation is called digitization. Digitization consists from two steps: sampling and quantization.
+    First, data is sampled, most often at regular intervals, such as the grid of pixels used to represent a digital image. Technically, a sample is defined as “a measurement made at a particular instant in space and time, according to a specified
+    procedure.” The frequency of sampling is referred to as resolution. Sampling turns continuos data into discrete data. This is data occurring in distinct units: people, pages of a book, pixels. Second, each sample is quantified, i.e.
+    49
+
+    assigned a numerical vale drawn from a defined range (such as 0-255 in the case
+    of a 8-bit greyscale image).</p>
+
+  <p>While some old media such as photography and sculpture is truly
+    continuos, most involve the combination of continuos and discrete coding. One example is motion picture film: each frame is a continuos photograph, but time is broken into a number of samples (frames). Video goes one step further by sampling the
+    frame along the vertical dimension (scan lines). Similarly, a photograph printed using a halftone process combine discrete and continuos representations. Such photograph consist from a number of orderly dots (i.e., samples), however the
+    diameters and areas of dots vary continuously.</p>
+
+  <p>As the last example demonstrates, while old media contains level(s) of discrete representation, the samples were never quantified. This quantification of samples is the crucial step accomplished by digitization. But why, we may ask, modern
+    media technologies were often in part discrete? The key assumption of modern semiotics is that communication requires discrete units. Without discrete units, there is no language. As Roland Barthes has put it, “language is, as it were, that
+    which divides reality (for instance the continuos spectrum of the colors is verbally reduced to a series of discontinuous terms).18 In postulating this, semioticians took human language as a prototypical example of a communication system. A
+    human language is discrete on most scales: we speak in sentences; a sentence is made from words; a word consists from morphemes, and so on. If we are to follow the assumption that any form of communication requires discrete representation, we
+    may expect that media used in cultural communication will have discrete levels. At first this explanation seems to work. Indeed, a film samples continuos time of human existence into discrete frames; a drawing samples visible reality into
+    discrete lines; and a printed photograph samples it into discrete dots. This assumption does not universally work, however: photographs, for instance, do not have any apparent units. (Indeed, in the 1970s semiotics was criticized for its
+    linguistic bias, and most semioticians came to recognize that language-based model of distinct units of meaning can’t be applied to many kinds of cultural communication.) More importantly, the discrete units of modern media are usually not the
+    units of meanings, the way morphemes are. Neither film frames not the halftone dots have any relation to how film or a photographs affect the viewer (except in modern art and avant-garde film — think of paintings by Roy Lichtenstein and films of
+    Paul Sharits — which often make the “material” units of media into the units of meaning.)</p>
+
+  <p>The more likely reason why modern media has discrete levels is because it emerges during Industrial Revolution. In the nineteenth century, a new organization of production known as factory system gradually replaced artisan labor. It reached its
+    classical form when Henry Ford installed first assembly line in his factory in 1913. The assembly line relied on two principles. The first was standardization of parts, already employed in the production of military uniforms50in the nineteenth
+    century. The second, never principle, was the separation of the production process into a set of repetitive, sequential, and simple activities that could be executed by workers who did not have to master the entire process and could be easily
+    replaced.</p>
+
+  <p>Not surprisingly, modern media follows the factory logic, not only in terms of division of labor as witnessed in Hollywood film studios, animation studios or television production, but also on the level of its material organization. The
+    invention of typesetting machines in the 1880s industrialized publishing while leading to standardization of both type design and a number and types of fonts used. In the 1890s cinema combined automatically produced images (via photography) with
+    a mechanical projector. This required standardization of both image dimensions (size, frame ratio, contrast) and of sampling rate of time (see “Digital Cinema” section for more detail). Even earlier, in the 1880s, first television systems
+    already involved standardization of sampling both in time and in space. These modern media systems also followed the factory logic in that once a new “model” (a film, a photograph, an audio recording) was introduced, numerous identical media
+    copies would be produced from this master. As I will show below, new media follows, or actually, runs ahead of a quite a different logic of post-industrial society — that of individual customization, rather that of mass standardization.</p>
+
+  <h6>Modularity</h6>
+
+  <p>This principle can be called "fractal structure of new media.” Just as a fractal has the same structure on different scales, a new media object has the same modular structure throughout. Media elements, be it images, sounds, shapes, or
+    behaviors, are represented as collections of discrete samples (pixels, polygons, voxels, characters, scripts). These elements are assembled into larger-scale objects but they continue to maintain their separate identity. The objects themselves
+    can be combined into even larger objects -- again, without losing their independence. For example, a multimedia "movie" authored in popular Macromedia Director software may consist from hundreds of still images, QuickTime movies, and sounds
+    which are all stored separately and are loaded at run time. Because all elements are stored independently, they can be modified at any time without having to change Director movie itself. These movies can be assembled into a larger "movie," and
+    so on. Another example of modularity is the concept of “object” used in Microsoft Office applications. When an object is inserted into a document (for instance, a media clip inserted into a Word document), it continues to maintain its
+    independence and can always be edited with the program used originally to create it. Yet another example of modularity is the structure of a HTML document: with the exemption of text, it consists from a number of51separate objects — GIF and JPEG
+    images, media clips, VRML scenes, Schockwave and Flash movies -- which are all stored independently locally and/or on a network. In short, a new media object consists from independent parts which, in their turn, consist from smaller independent
+    parts, and so on, up to the level of smallest “atoms” such as pixels, 3D points or characters.</p>
+
+  <p>World Wide Web as a whole is also completely modular. It consists from numerous Web pages, each in its turn consisting from separate media elements. Every element can be always accessed on its own. Normally we think of elements as belonging to
+    their corresponding Web sites, but this just a convention, reinforced by commercial Web browsers. Netomat browser which extract elements of a particular media type from different Web pages (for instance, only images) and display them together
+    without identifying the Web sites they come from, highlights for us this fundamentally discrete and non-hierarchical organization of the Web (see introduction to “Interface” chapter for more on this browser.)</p>
+
+  <p>In addition to using the metaphor of a fractal, we can also make an analogy between modularity of new media and the structured computer programming. Structural computer programming which became standard in the 1970s involves writing small and
+    self-sufficient modules (called in different computer languages subroutines, functions, procedures, scripts) which are assembled into larger programs. Many new media objects are in fact computer programs which follow structural programming
+    style. For example, most interactive multimedia applications are programs written in Macromedia Director’s Lingo. A Lingo program defines scripts which control various repeated actions, such as clicking on a button; these scripts are assembled
+    into larger scripts. In the case of new media objects which are not computer programs, an analogy with structural programming still can be made because their parts can be accessed, modified or substituted without affecting the overall structure
+    of an object. This analogy, however, has its limits. If a particular module of a computer program is deleted, the program would not run. In contrast, just as it is the case with traditional media, deleting parts of a new media object does not
+    render its meaningless. In fact, the modular structure of new media makes such deletion and substitution of parts particularly easy. For example, since a HTML document consists from a number of separate objects each represented by a line of HTML
+    code, it is very easy to delete, substitute or add new objects. Similarly, since in Photoshop the parts a digital image are usually placed on separate layers, these parts can be deleted and substituted with a click of a button.</p>
+
+  <h6>Automation</h6>
+
+  <p>Numerical coding of media (principle 1) and modular structure of a media object (principle 2) allow to automate many operations involved in media creation, manipulation and access. Thus human intentionally can be removed from thecreative
+    process, at least in part.</p>
+
+  <p>The following are some of the examples of what can be called “low-level” automation of media creation, in which the computer user modifies or creates from scratch a media object using templates or simple algorithms. These techniques are robust
+    enough so that they are included in most commercial software for image editing, 3D graphics, word processing, graphic layout, and so on. Image editing programs such as Photoshop can automatically correct scanned images, improving contrast range
+    and removing noise. They also come with filters which can automatically modify an image, from creating simple variations of color to changing the whole image as though it was painted by Van Gog, Seurat or other brand-name artist. Other computer
+    programs can automatically generate 3D objects such as trees, landscapes, human figures and detailed ready-to-use animations of complex natural phenomena such as fire and waterfalls. In Hollywood films, flocks of birds, ant colonies and crowds
+    of people are automatically created by AL (artificial life) software. Word processing, page layout, presentation and Web creation programs come with "agents" which can automatically create the layout of a document. Writing software helps the
+    user to create literary narratives using formalized highly conventions genre convention. Finally, in what maybe the most familiar experience of automation of media generation to most computer users, many Web sites automatically generate Web
+    pages on the fly when the user reaches the site. They assemble the information from the databases and format it using generic templates and scripts.</p>
+
+  <p>The researchers are also working on what can be called “high-level” automation of media creation which requires a computer to understand, to a certain degree, the meanings embedded in the objects being generated, i.e. their semantics. This
+    research can be seen as a part of a larger initiative of artificial intelligence (AI). As it is well known, AI project achieved only very limited success since its beginnings in the 1950s. Correspondingly, work on media generation which requires
+    understanding of semantics is also in the research stage and is rarely included in commercial software. Beginning in the 1970s, computers were often used to generate poetry and fiction. In the 1990s, the users of Internet chat rooms became
+    familiar with bots -- the computer programs which simulate human conversation. The researchers at New York University showed a “virtual theater” composed of a few “virtual actors” which adjust their behavior in real-
+    time in response to user’s actions.20 The MIT Media Lab developed a number of different projects devoted to “high-level” automation of media creation and use: a “smart camera” which can automatically follow the action and frame the shots
+    given a script;21 ALIVE, a virtual environment where the user interacted with 53 animated characters; a new kind of human-computer interface where the computer presents itself to a user as an animated talking character. The character,
+    generated by a computer in real-time, communicates with user using natural language; it also tries to guess user’s emotional state and to adjust the style of interaction accordingly.</p>
+
+  <p>The area of new media where the average computer user encountered AI in the 1990s was not, however, human-computer interface, but computer games. Almost every commercial game includes a component called AI engine. It stands for part of the
+    game’s computer code which controls its characters: car drivers in a car race simulation, the enemy forces in a strategy game such as Command and Conquer, the single enemies which keep attacking the user in first-person shooters such as Quake.
+    AI engines use a variety of approaches to simulate human intelligence, from rule-based systems to neural networks. Like AI expert systems, these characters have expertise in some well-defined but narrow area such as attacking the user. But
+    because computer games are highly codified and rule- based, these characters function very effectively. That is, they effectively respond to whatever few things the user are allowed to ask them to do: run forward, shoot, pick up an object. They
+    can’t do anything else, but then the game does not provide the opportunity for the user to test this. For instance, in a martial arts fighting game, I can’t ask questions of my opponent, nor do I expect him or her to start a conversation with
+    me. All I can do is to “attack” my opponent by pressing a few buttons; and within this highly codified situation the computer can “fight” me back very effectively. In short, computer characters can display intelligence and skills only because
+    the programs put severe limits on our possible interactions with them. Put differently, the computers can pretend to be intelligent only by tricking us into using a very small part of who we are when we communicate with them. So, to use another
+    example, at 1997 SIGGRAPH convention I was playing against both human and computer-controlled characters in a VR simulation of some non-existent sport game. All my opponents appeared as simple blobs covering a few pixels of my VR display; at
+    this resolution, it made absolutely no difference who was human and who was not.
+  </p>
+
+  <p>Along with “low-level” and “high-level” automation of media creation, another area of media use which is being subjected to increasing automation is media access. The switch to computers as means to store and access enormous amount of media
+    material, exemplified by the by “media assets” stored in the databases of stock agencies and global entertainment conglomerates, as well as by the public “media assets” distributed across numerous Web sites, created the need to find more
+    efficient ways to classify and search media objects. Word processors and other text management software for a long time provided the abilities to search for specific strings of text and automatically index documents. UNIX operating system also
+    always included powerful commands to search and filter text files. In the 1990s software designers started to provide media users with
+    54
+
+    similar abilities. Virage introduced Virage VIR Image Engine which allows to search for visually similar image content among millions of images as well as a
+    set of video search tools to allow indexing and searching video files. By the end of the 1990s, the key Web search engines already included the options to search the Internet by specific media such as images, video and audio.</p>
+
+  <p>The Internet, which can be thought of as one huge distributed media database, also crystallized the basic condition of the new information society: over-abundance of information of all kind. One response was the popular idea of software
+    “agents” designed to automate searching for relevant information. Some agents act as filters which deliver small amounts of information given user's criteria. Others are allowing users to tap into the expertise of other users, following their
+    selections and choices. For example, MIT Software Agents Group developed such agents as BUZZwatch which “distills and tracks trends, themes, and topics within collections of texts across time” such as Internet discussions and Web pages; Letizia,
+    “a user interface agent that assists a user browsing the World Wide Web by... scouting ahead from the user's current position to find Web pages of possible interest”; and Footprints which “uses information left by other
+    people to help you find your way around.”</p>
+
+  <p>By the end of the twentieth century, the problem became no longer how to
+    create a new media object such as an image; the new problem was how to find the object which already exists somewhere. That is, if you want a particular image, chances are it is already exists -- but it may be easier to create one from scratch
+    when to find the existing one. Beginning in the nineteenth century, modern society developed technologies which automated media creation: a photo camera, a film camera, a tape recorder, a video recorder, etc. These technologies allowed us, over
+    the course of one hundred and fifty years, to accumulate an unprecedented amount of media materials: photo archives, film libraries, audio archives...This led to the next stage in media evolution: the need for new technologies to store, organize
+    and efficiently access these media materials. These new technologies are all computer-based: media databases; hypermedia and other ways of organizing media material such the hierarchical file system itself; text management software; programs for
+    content-based search and retrieval. Thus automation of media access is the next logical stage of the process which was already put into motion when a first photograph was taken. The emergence of new media coincides with this second stage of a
+    media society, now concerned as
+    much with accessing and re-using existing media as with creating new one.26 (See “Database” section for more on databases).</p>
+
+  <h6>Variability</h6>
+
+  <p>A new media object is not something fixed once and for all but can exist in different, potentially infinite, versions. This is another consequence of numerical coding of media (principle 1) and modular structure of a media object (principle 2).
+    Other terms which are often used in relation to new media and which would be appropriate instead of “variable” is “mutable” and “liquid.”</p>
+
+  <p>Old media involved a human creator who manually assembled textual, visual and/or audio elements into a particular composition or a sequence. This sequence was stored in some material, its order determined once and for all. Numerous copies could
+    be run off from the master, and, in perfect correspondence with the logic of an industrial society, they were all identical. New media, in contrast, is characterized by variability. Instead of identical copies a new media object typically gives
+    rise to many different versions. And rather being created completely by a human author, these versions are often in part automatically assembled by a computer. (The already quoted example of Web pages automatically generated from databases using
+    the templates created by Web designers can be invoke here as well.) Thus the principle of variability is closely connected to automation.</p>
+
+  <p>Variability would also will not be possible without modularity. Stored digitally, rather than in some fixed medium, media elements maintain their separate identity and can be assembled into numerous sequences under program control. In addition,
+    because the elements themselves are broken into discrete samples (for instance, an image is represented as an array of pixels), they can be also created and customized on the fly.</p>
+
+  <p>The logic of new media thus corresponds to the post-industrial logic of "production on demand" and "just in time" delivery which themselves were made possible by the use of computers and computer networks in all stages of manufacturing and
+    distribution. Here "culture industry" (the term was originally coined by Theodor Adorno in the 1930s) is actually ahead of the rest of the industry. The idea that a customer determines the exact features of her car at the showroom, the data is
+    then transmitted to the factory, and hours later the new car is delivered, remains a dream, but in the case of computer media, it is reality. Since the same machine is used as a showroom and a factory, i.e., the same computer generates and
+    displays media -- and since the media exists not as a material object but as data which can be sent through the wires with the speed of light, the customized version created in response to user’s input is delivered almost immediately. Thus, to
+    continue with the same example, when you access a Web site, the server immediately assembles a customized Web page.
+  </p>
+
+  <p>
+    Here are some particular cases of the variability principle (most of them will be discussed in more detail in later chapters):
+  </p>
+
+  <li>Media elements are stored in a media database; a variety of end-user objects which vary both in resolution, in form and in content can be generated, either beforehand, or on demand, from this database. At first, we may think that this is
+    simply a particular technological implementation of variability principle,
+    56
+
+    but, as I will show in “Database” section, in a computer age database comes to function as a cultural form of its own. It offers a particular model of the world and of the human experience. It also affects how the user conceives of data which it
+    contains.</li>
+
+  <li>It becomes possible to separate the levels of "content" (data) and interface. A number of different interfaces can be created to the same data. A new media object can be defined as one or more interfaces to a multimedia database (see
+    introduction to “Interface” chapter and “Database” section for more
+    discussion of this principle).</li>
+
+  <li>The information about the user can be used by a computer program to
+    automatically customize the media composition as well as to create the elements themselves. Examples: Web sites use the information about the type of hardware and browser or user's network address to automatically customize the site which the
+    user will see; interactive computer installations use information about the user's body movements to generate sounds, shapes, and images, or to control behaviors of artificial creatures.</li>
+
+  <li>A particular case of 4.3 is branching-type interactivity (sometimes also called menu-based interactivity.) This term refers to programs in which all the possible objects which the user can visit form a branching tree structure. When the user
+    reaches a particular object, the program presents her with choices and let her pick. Depending on the value chosen, the user advances along a particular branch of the tree. For instance, in Myst each screen typically contains a left and a right
+    button, clicking on the button retrieves a new screen, and so on. In this case the information used by a program is the output of user's cognitive process, rather than the network address or body position. (See “Menus, Filters, Plug-ins” for
+    more discussion of this principle.)</li>
+  <li>Hypermedia is another popular new media structure, which conceptually is close to branching-type interactivity (because quite often the elements are connected using a branch tree structure). In hypermedia, the multimedia elements making a
+    document are connected through hyperlinks. Thus the elements and the structure are independent of each other --rather than hard- wired together, as in traditional media. World Wide Web is a particular implementation of hypermedia in which the
+    elements are distributed throughout the network . Hypertext is a particular case of hypermedia which uses only one media type — text. How does the principle of variability works in this case? We can conceive of all possible paths through a
+    hypermedia document as being different versions of it. By following the links the user retrieves a particular version of a document.</li>
+  <li>Another way in which different versions of the same media objects are commonly generated in computer culture is through periodic updates. Networks allow the content of a new media object to be periodically updating while keeping its structure
+    intact. For instance, modern software applications can
+    57
+
+    periodically check for updates on the Internet and then download and install these updates, sometimes without any actions from the user. Most Web sites are also periodically updated either manually or automatically, when the data in the
+    databases which drives the sites changes. A particularly interesting case of this “updateability” feature is the sites which update some information, such as such as stock prices or weather, continuosly.</li>
+
+  <li> One of the most basic cases of the variability principle is scalability, in which different versions of the same media object can be generated at various sizes or levels of detail. The metaphor of a map is useful in thinking about the
+    scalability principle. If we equate a new media object with a physical territory, different versions of this object are like maps of this territory, generated at different scales. Depending on the scale chosen, a map provides more or less detail
+    about the territory. Indeed, different versions of a new media object may vary strictly quantitatively, i.e. in the amount of detail present: for instance, a full size image and its icon, automatically generated by Photoshop; a full text and its
+    shorter version, generated by “Autosummarize” command in Microsoft Word 97; or the different versions which can be created using “Outline” command in Word. Beginning with version 3 (1997), Apple’s QuickTime format also made possible to imbed a
+    number of different versions which differ in size within a single QuickTime movie; when a Web user accesses the movie, a version is automatically selected depending on connection speed. Conceptually similar technique called “distancing” or
+    “level of detail” is used in interactive virtual worlds such as VRML scenes. A designer creates a number of models of the same object, each with progressively less detail. When the virtual camera is close to the object, a highly detailed model
+    is used; if the object is far away, a lesser detailed version is automatically substituted by a program to save unnecessary computation of detail which can’t be seen anyway.</li>
+
+  <p>New media also allows to create versions of the same object which differ from each other in more substantial ways. Here the comparison with maps of diffident scales no longer works. The examples of commands in commonly used software packages
+    which allow to create such qualitatively different versions are “Variations” and “Adjustment layers” in Photoshop 5 and “writing style” option in Word’s “Spelling and Grammar” command. More examples can be found on the Internet were, beginning
+    in the middle of the 1990s, it become common to create a few different versions of a Web site. The user with a fast connection can choose a rich multimedia version while the user with a slow connection can settle for a more bare-bones version
+    which loads faster.</p>
+  <p>Among new media artworks, David Blair’s WaxWeb, a Web site which is an “adaptation” of an hour long video narrative, offers a more radical implementation of the scalability principle. While interacting with the narrative, the user at any point
+    can change the scale of representation, going from an image- based outline of the movie to a complete script or a particular shot, or a VRML
+    58
+
+    scene based on this shot, and so on.28 Another example of how use of scalability principle can create a dramatically new experience of an old media object is
+    Stephen Mamber’s database-driven representation of Hitchock’s Birds. Mamber’s software generates a still for every shot of the film; it then automatically combines all the stills into a rectangular matrix. Every cell in the matrix corresponds to
+    a particular shot from the film. As a result, time is spatialized, similar to how it was done in Edisons’s early Kinetoscope cylinders (see “The Myths of New Media.”) Spatializing the film allows us to study its different temporal structures
+    which would be hard to observe otherwise. As in WaxWeb, the user can at any point change the scale of representation, going from a complete film to a particular shot.</p>
+
+  <p>
+    As can be seen, the principle of variability is a useful in allowing us to connect many important characteristics of new media which on first sight may appear unrelated. In particular, such popular new media structures as branching (or menu)
+    interactivity and hypermedia can be seen as particular instances of variability principle (4.4 and 4.5, respectively). In the case of branching interactivity, the user plays an active role in determining the order in which the already generated
+    elements are accessed. This is the simplest kind of interactivity; more complex kinds are also possible where both the elements and the structure of the whole object are either modified or generated on the fly in response to user's interaction
+    with a program. We can refer to such implementations as open interactivity to distinguish them from the closed interactivity which uses fixed elements arranged in a fixed branching structure. Open interactivity can be implemented using a variety
+    of approaches, including procedural and object- oriented computer programming, AI, AL, and neural networks.</p>
+
+  <p>As long as there exist some kernel, some structure, some prototype which remains unchanged throughout the interaction, open interactivity can be thought of as a subset of variability principle. Here useful analogy can be made with theory of
+    family resemblance by Witgenstein, later developed into the influential theory of prototypes by cognitive psychologist Eleonor Rosh. In a family, a number of relatives will share some features, although no single family member may posses all of
+    the features. Similarly, according to the theory of prototypes, the meanings of many words in a natural language derive not through a logical definition but through a proximity to certain prototype.</p>
+
+  <p>Hypermedia, the other popular structure of new media, can also be seen as a particular case of the more general principle of variability. According to the definition by Halacz and Swartz, hypermedia systems “provide their users with the ability
+    to create, manipulate and/or examine a network of information-
+    containing nodes interconnected by relational links.”29 Since in new media the individual media elements (images, pages of text, etc.) always retain their
+    individual identity (the principle of modularity), they can be "wired" together into more than one object. Hyperlinking is a particular way to achieve this wiring. A
+    59
+
+    hyperlink creates a connection between two elements, for example between two words in two different pages or a sentence on one page and an image in another, or two different places within the same page. The elements connected through hyperlinks
+    can exist on the same computer or on different computers connected on a network, as in the case of World Wide Web.
+  </p>
+
+  <p>If in traditional media the elements are "hardwired" into a unique structure and no longer maintain their separate identity, in hypermedia the elements and the structure are separate from each other. The structure of hyperlinks -- typically a
+    branching tree - can be specified independently from the contents of a document. To make an analogy with grammar of a natural language as described in Noam
+    Chomsky’s early linguistic theory,30 we can compare a hypermedia structure which specifies the connections between the nodes with a deep structure of a sentence; a particular hypermedia text can be then compared with a particular sentence in a
+    natural language. Another useful analogy is with computer programming. In programming, there is clear separation between algorithms and data. An algorithm specifies the sequence of steps to be performed on any data, just as a hypermedia
+    structure specifies a set of navigation paths (i.e., connections between the nodes) which potentially can be applied to any set of media objects.</p>
+
+  <p>
+    The principle of variability also exemplifies how, historically, the changes in media technologies are correlated with changes the social change. If the logic of old media corresponded to the logic of industrial mass society, the logic of new
+    media fits the logic of the post-industrial society which values individuality over conformity. In industrial mass society everybody was supposed to enjoy the same goods -- and to have the same beliefs. This was also the logic of media
+    technology. A media object was assembled in a media factory (such as a Hollywood studio). Millions of identical copies were produced from a master and distributed to all the citizens. Broadcasting, cinema, print media all followed this logic.</p>
+
+  <p>In a post-industrial society, every citizen can construct her own custom lifestyle and "select" her ideology from a large (but not infinite) number of choices. Rather than pushing the same objects/information to a mass audience, marketing now
+    tries to target each individual separately. The logic of new media technology reflects this new social logic. Every visitor to a Web site automatically gets her own custom version of the site created on the fly from a database. The language of
+    the text, the contents, the ads displayed — all these can be customized by interpreting the information about where on the network the user is coming from; or, if the user previously registered with the site, her personal profile can be used for
+    this customization. According to a report in USA Today (November 9, 1999), “Unlike ads in magazines or other real-world publications, ‘banner’ ads on Web pages change wit every page view. And most of the companies that place the ads on the Web
+    site track your movements across the Net, ‘remembering’ which ads you’ve seen, exactly when you saw them, whether
+    60
+
+    you clicked on them, where you were at the time and the site you have visited just
+    before.”</p>
+
+  <p>More generally, every hypertext reader gets her own version of the
+    complete text by selecting a particular path through it. Similarly, every user of an interactive installation gets her own version of the work. And so on. In this way new media technology acts as the most perfect realization of the utopia of an
+    ideal society composed from unique individuals. New media objects assure users that their choices — and therefore, their underlying thoughts and desires — are unique, rather than pre-programmed and shared with others. As though trying to
+    compensate for their earlier role in making us all the same, today descendants of the Jacqurd's loom, the Hollerith tabulator and Zuse's cinema-computer are now working to convince us that we are all unique.</p>
+
+  <p>The principle of variability as it is presented here is not dissimilar to how
+    the artist and curator Jon Ippolito uses the same concept.32 I believe that we differ in how we use the concept of variability in two key respects. First, Ippolito uses
+    variability to describe a characteristic shared by recent conceptual and some digital art, while I see variability as a basic condition of all new media. Second, Ippolito follows the tradition of conceptual art where an artist can vary any
+    dimension of the artwork, even its content; my use of the term aims to reflect the logic of mainstream culture where versions of the object share some well-defined “data.” This “data” which can be a well-known narrative (Psycho), an icon (Coca-
+    Cola sign), a character (Mickey Mouse) or a famous star (Madonna), is referred in media industry as “property.” Thus all cultural projects produced by Madonna will be automatically united by her name. Using the theory of prototypes, we can say
+    that the property acts as a prototype, and different versions are derived from this prototype. Moreover, when a number of versions are being commercially released based on some “property”, usually one of these versions is treated as the source
+    of the “data,” with others positioned as being derived from this source. Typically the version which is in the same media as the original “property” is treated as the source. For instance, when a movie studio releases a new film, along with a
+    computer game based on it, along with products tie-ins, along with music written for the movie, etc., usually the film is presented as the “base” object from which other objects are derived. So when George Lucas releases a new Star Wars movie,
+    it refers back to the original property — the original Star Wars trilogy. This new movie becomes the “base” object and all other media objects which are released along with refer to this object. Conversely, when computer games such as Tomb Rider
+    are re-made into movies, the original computer game is presented as the “base” object.</p>
+
+  <p>
+    While I deduced the principle of variability from more basic principles of new media — numerical representation (1) and modularity of information (2) — it can also be seen as a consequence of computer’s way of to represent data and model the
+    world itself: as variables rather than constants. As new media theorist
+    61
+
+    and architect Marcos Novak notes, a computer — and computer culture in its
+    wake — substitute every constant by a variable.33 In designing all functions and data structures, a computer programmer tries to always use variables rather than
+    constants. On the level of human-computer interface, this principle means that the user is given many options to modify the performance of a program of a media object, be it a computer game, a Web site, a Web browser, or the operating system
+    itself. The user can change the profile of a game character, modify how the folders appear on the desktop, how files are displayed, what icons are used, etc. If we apply this principle to culture at large, it would mean that every choice
+    responsible for giving a cultural object a unique identity can potentially remain always open. Size, degree of detail, format, color, shape, interactive trajectory, trajectory through space, duration, rhythm, point of view, the presence or
+    absence of particular characters, the development of the plot — to name just a few dimensions of cultural objects in different media — all these can be defined as variables, to be freely modified by a user.</p>
+
+  <p>Do we want, or need, such freedom? As the pioneer of interactive filmmaking Graham Weinbren argued in relation to interactive media, making a
+    choice involves a moral responsibility.34 By passing these choices to the user, the author also passes the responsibility to represent the world and the human
+    condition in it. (This is paralleled by the use of phone or Web-based automated menu systems by all big companies to handle their customers; while the companies are doing this in the name of “choice” and “freedom,” one of the effects of this
+    automation is that labor to be done is passed from company’s employees to the customer. If before a customer would get the information or buy the product by interacting with a company employee, now she has to spend her own time and energy in
+    navigating through numerous menus to accomplish the same result.) The moral anxiety which accompanies the shift from constants to variables, from tradition to choices in all areas of life in a contemporary society, and the corresponding anxiety
+    of a writer who has to portray it, is well rendered in this closing passage of a short story written by a contemporary American writer
+    Rick Moody (the story is about the death of his sister):</p>
+
+  <p>
+    I should fictionalize it more, I should conceal myself. I should consider the responsibilities of characterization, I should conflate her two children into one, or reverse their genders, or otherwise alter them, I should make her boyfriend a
+    husband, I should explicate all the tributaries of my extended family (its remarriages, its internecine politics), I should novelize the whole thing, I should make it multigenerational, I should work in my forefathers (stonemasons and
+    newspapermen), I should let artifice create an elegant surface, I should make the events orderly, I should wait and write about it later, I should wait until I’m not angry, I shouldn’t clutter a narrative with fragments, with mere recollections
+    of
+    62
+    good times, or with regrets, I should make Meredith’s death shapely and persuasive, not blunt and disjunctive, I shouldn’t have to think the unthinkable, I shouldn’t have to suffer, I should address her here directly (these are the ways I miss
+    you), I should write only of affection, I should make our travels in this earthy landscape safe and secure, I should have a better ending, I shouldn’t say her life was short and often sad, I shouldn’t say she had demons, as I do too.</p>
+
+  <h6>Transcoding</h6>
+
+  <p>Beginning with the basic, “material” principles of new media — numeric coding and modular organization — we moved to more “deep” and far reaching ones — automation and variability. The last, fifth principle of cultural transcoding aims to
+    describe what in my view is the most substantial consequence of media’s computerization. As I have suggested, computerization turns media into computer data. While from one point of view computerized media still displays structural organization
+    which makes sense to its human users — images feature recognizable objects; text files consist from grammatical sentences; virtual spaces are defined along the familiar Cartesian coordinate system; and so on — from another point of view, its
+    structure now follows the established conventions of computer's organization of data. The examples of these conventions are different data structures such as lists, records and arrays; the already mentioned substitution of all constants by
+    variables; the separation between algorithms and data structures; and modularity.
+  </p>
+
+  <p>
+    The structure of a computer image is a case in point. On the level of representation, it belongs to the side of human culture, automatically entering in dialog with other images, other cultural “semes” and “mythemes.” But on another level, it is
+    a computer file which consist from a machine-readable header, followed by numbers representing RGB values of its pixels. On this level it enters into a dialog with other computer files. The dimensions of this dialog are not the image’s content,
+    meanings or formal qualities, but file size, file type, type of compression used, file format and so on. In short, these dimensions are that of computer’s own cosmogony rather than of human culture.
+  </p>
+
+  <p>
+    Similarly, new media in general can be thought of as consisting from two distinct layers: the “cultural layer” and the “computer layer.” The examples of categories on the cultural layer are encyclopedia and a short story; story and plot;
+    composition and point of view; mimesis and catharsis, comedy and tragedy. The examples of categories on the computer layer are process and packet (as in data packets transmitted through the network); sorting and matching; function and variable;
+    a computer language and a data structure.
+  </p>
+
+  <p>
+    Since new media is created on computers, distributed via computers, stored and archived on computers, the logic of a computer can be expected to 63 significant influence on the traditional cultural logic of media. That is, we may expect that the
+    computer layer will affect the cultural layer. The ways in which computer models the world, represents data and allows us to operate on it; the key operations behind all computer programs (such as search, match, sort, filter); the conventions of
+    HCI — in short, what can be called computer’s ontology, epistemology and pragmatics — influence the cultural layer of new media: its organization, its emerging genres, its contents.
+  </p>
+
+  <p>
+    Of course what I called a computer layer is not itself fixed but is changing in time. As hardware and software keep evolving and as the computer is used for new tasks and in new ways, this layer is undergoing continuos transformation. The new
+    use of computer as a media machine is the case in point. This use is having an effect on computer’s hardware and software, especially on the level of the human-computer interface which looks more and more like the interfaces of older media
+    machines and cultural technologies: VCR, tape player, photo camera.
+  </p>
+
+  <p>
+    In summary, the computer layer and media/culture layer influence each other. To use another concept from new media, we can say that they are being composited together. The result of this composite is the new computer culture: a blend of human
+    and computer meanings, of traditional ways human culture modeled the world and computer’s own ways to represent it.
+  </p>
+
+  <p>Throughout the book, we will encounter many examples of the principle of transcoding at work. For instance, “The Language of Cultural Interfaces” section will look at how conventions of printed page, cinema and traditional HCI interact together
+    in the interfaces of Web sites, CD-ROMs, virtual spaces and computer games.</p>
+
+  <p>“Database” section will discuss how a database, originally a computer technology to organize and access data, is becoming a new cultural form of its own. But we can also reinterpret some of the principles of new media already discussed above as
+    consequences of the transcoding principle. For instance, hypermedia can be understood as one cultural effect of the separation between a algorithm and a data structure, essential to computer programming. Just as in programming algorithms and
+    data structures exist independently of each other, in hypermedia data is separated from the navigation structure. (For another example of the cultural effect of algorithm—data structure dichotomy see “Database” section.) Similarly, the modular
+    structure of new media can be seen as an effect of the modularity in structural computer programming. Just as a structural computer program consist from smaller modules which in their turn consist from even smaller modules, a new media object as
+    a modular structure, as I explained in my discussion of modularity above.</p>
+
+  <p>In new media lingo, to “transcode” something is to translate it into another format. The computerization of culture gradually accomplishes similar transcoding in relation to all cultural categories and concepts. That is, cultural categories and
+    concepts are substituted, on the level of meaning and/or the language, by new ones which derive from computer’s ontology, epistemology and
+    64
+    pragmatics. New media thus acts as a forerunner of this more general process of cultural re-conceptualization.</p>
+
+  <p>Given the process of “conceptual transfer” from computer world to culture at large, and given the new status of media as computer data, what theoretical framework can we use to understand it? Since on one level new media is an old media which
+    has been digitized, it seems appropriate to look at new media using the perspective of media studies. We may compare new media and old media, such as print, photography, or television. We may also ask about the conditions of distribution and
+    reception and the patterns of use. We may also ask about similarities and differences in the material properties of each medium and how these affect their aesthetic possibilities.</p>
+
+  <p>This perspective is important, and I am using it frequently in this book; but it is not sufficient. It can't address the most fundamental new quality of new media which has no historical precedent — programmability. Comparing new media to
+    print, photography, or television will never tell us the whole story. For while from one point of view new media is indeed another media, from another is simply a particular type of computer data, something which is stored in files and
+    databases, retrieved and sorted, run through algorithms and written to the output device. That the data represents pixels and that this device happened to be an output screen is besides the point. The computer may perform perfectly the role of
+    the Jacquard loom, but underneath it is fundamentally Babbage's Analytical Engine - after all, this was its identity for one hundred and fifty years. New media may look like media, but this is only the surface.</p>
+
+  <p>New media calls for a new stage in media theory whose beginnings can be traced back to the revolutionary works of Robert Innis and Marshall McLuhan of the 1950s. To understand the logic of new media we need to turn to computer science. It is
+    there that we may expect to find the new terms, categories and operations which characterize media which became programmable. From media studies, we move to something which can be called software studies; from media theory — to software theory.
+    The principle of transcoding is one way to start thinking about software theory. Another way which this book experiments with is using concepts from computer science as categories of new media theory. The examples here are “interface” and
+    “database.” And, last but not least, I follow the analysis of “material” and logical principles of computer hardware and software in this chapter with two chapters on human-computer interface and the interfaces of software applications use to
+    author and access new media objects.</p>
+
+
+</body>
+
+</html>
